@@ -1,9 +1,9 @@
-<suite name="Suite" parallel="tests">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
   <test name="Test">
-   <parameter name="ip" value="192.168.225.224"/>
-   <parameter name="browser" value="chrome"/>
-    <packages>
-      <package name="script"/>
-    </packages>
-  </test> 
-</suite> 
+    <classes>
+      <class name="script.OrangeTC1"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
