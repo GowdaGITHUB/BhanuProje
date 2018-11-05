@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Nov 05 09:12:55 IST 2018</td>
+<td>Started on:</td><td>Mon Nov 05 09:20:56 IST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (93 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (392 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,31 +75,31 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='script.OrangeTC1.openApp()'><b>openApp</b><br>Test class: script.OrangeTC1<br>Parameters: 198.162.225.242, chrome</td>
+<td title='script.OrangeTC1.openApp()'><b>openApp</b><br>Test class: script.OrangeTC1<br>Parameters: localhost, chrome</td>
 <td><div><pre>java.lang.NoClassDefFoundError: okhttp3/ConnectionPool
 	at org.openqa.selenium.remote.internal.OkHttpClient$Factory.&lt;init&gt;(OkHttpClient.java:116)
 	at org.openqa.selenium.remote.http.HttpClient$Factory.createDefault(HttpClient.java:66)
 	at org.openqa.selenium.remote.HttpCommandExecutor.&lt;clinit&gt;(HttpCommandExecutor.java:47)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
-	at generic.Utility.openBrowser(Utility.java:30)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at generic.Utility.openBrowser(Utility.java:19)
 	at generic.BaseTest.openApp(BaseTest.java:30)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
 Caused by: java.lang.ClassNotFoundException: okhttp3.ConnectionPool
 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:335)
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
-	... 28 more
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2070463382", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2070463382'><pre>java.lang.NoClassDefFoundError: okhttp3/ConnectionPool
+	... 35 more
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace712025048", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace712025048'><pre>java.lang.NoClassDefFoundError: okhttp3/ConnectionPool
 	at org.openqa.selenium.remote.internal.OkHttpClient$Factory.&lt;init&gt;(OkHttpClient.java:116)
 	at org.openqa.selenium.remote.http.HttpClient$Factory.createDefault(HttpClient.java:66)
 	at org.openqa.selenium.remote.HttpCommandExecutor.&lt;clinit&gt;(HttpCommandExecutor.java:47)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
-	at generic.Utility.openBrowser(Utility.java:30)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at generic.Utility.openBrowser(Utility.java:19)
 	at generic.BaseTest.openApp(BaseTest.java:30)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -116,39 +116,40 @@ Caused by: java.lang.ClassNotFoundException: okhttp3.ConnectionPool
 	at org.testng.TestRunner.privateRun(TestRunner.java:746)
 	at org.testng.TestRunner.run(TestRunner.java:600)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
 Caused by: java.lang.ClassNotFoundException: okhttp3.ConnectionPool
 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:335)
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
-	... 28 more
+	... 35 more
 </pre></div></td>
 <td>0</td>
-<td>script.OrangeTC1@66a3ffec</td></tr>
+<td>script.OrangeTC1@5e5792a0</td></tr>
 <tr>
-<td title='script.OrangeTC1.closeApp()'><b>closeApp</b><br>Test class: script.OrangeTC1<br>Parameters: [TestResult name=testA status=SKIP method=OrangeTC1.testA()[pri:1, instance:script.OrangeTC1@66a3ffec] output={null}]<br/>
-<a href="#Output-1924913229" onClick='toggleBox("Output-1924913229", this, "Show output", "Hide output");'>Show output</a>
+<td title='script.OrangeTC1.closeApp()'><b>closeApp</b><br>Test class: script.OrangeTC1<br>Parameters: [TestResult name=testA status=SKIP method=OrangeTC1.testA()[pri:1, instance:script.OrangeTC1@5e5792a0] output={null}]<br/>
+<a href="#Output-586084331" onClick='toggleBox("Output-586084331", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1924913229" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1924913229">
+<a href="#Output-586084331" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-586084331">
 TestName:testA Status:PASS<br/>
 </div>
 </td>
 <td><div><pre>java.lang.NullPointerException
 	at generic.BaseTest.closeApp(BaseTest.java:44)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1924913229", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1924913229'><pre>java.lang.NullPointerException
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace586084331", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace586084331'><pre>java.lang.NullPointerException
 	at generic.BaseTest.closeApp(BaseTest.java:44)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -165,16 +166,21 @@ TestName:testA Status:PASS<br/>
 	at org.testng.TestRunner.privateRun(TestRunner.java:746)
 	at org.testng.TestRunner.run(TestRunner.java:600)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
 </pre></div></td>
 <td>0</td>
-<td>script.OrangeTC1@66a3ffec</td></tr>
+<td>script.OrangeTC1@5e5792a0</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -187,7 +193,7 @@ TestName:testA Status:PASS<br/>
 <td title='script.OrangeTC1.testA()'><b>testA</b><br>Test class: script.OrangeTC1</td>
 <td></td>
 <td>0</td>
-<td>script.OrangeTC1@66a3ffec</td></tr>
+<td>script.OrangeTC1@5e5792a0</td></tr>
 </table><p>
 </body>
 </html>
